@@ -1,0 +1,141 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  /* background-color: antiquewhite; */
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: "background ease-out 0.2s";
+}
+
+#header .navbar-collapse {
+  justify-content: end;
+}
+
+/* #header .nav-link:hover {
+  border-bottom: solid 4px var(--secondary);
+  color: var(--secondary);
+} */
+.navbar-default .navbar-nav > li > a:before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 10px;
+  bottom: 45px;
+  content: "";
+  background: green;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+.navbar-default .navbar-nav > li > a:hover:before {
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: red;
+  z-index: 200;
+}
+.overlay:hover {
+  display: block;
+}
+
+#servicos a.destaque {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.subtitle {
+  color: var(--medium);
+  font-weight: 400;
+}
+
+.icon-grid {
+  background-color: lightgray;
+  padding: 0 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--light);
+  height: 100px;
+  transition: ease-out all 0.2s;
+}
+
+.icon-grid:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* #header.active {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+  border-bottom: solid 4px transparent;
+}
+
+ */
+
+.results {
+  width: 90vw;
+  max-width: 550px;
+  margin: 8vh auto;
+}
+
+.anos {
+  color: var(--secondary);
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+.experiencia {
+  align-items: center;
+  /* margin-left: -70px; */
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.telefone {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
